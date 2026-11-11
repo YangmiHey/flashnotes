@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flashnotes"
+version = "0.1.0"
+description = "Turn long notes into structured summaries with DeepSeek V4.1 Flash on Nebius Token Factory."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+flashnotes = "flashnotes:main"
+
+[tool.setuptools]
+py-modules = ["flashnotes"]
